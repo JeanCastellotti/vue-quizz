@@ -1,0 +1,134 @@
+{
+  "questions": [
+    {
+      "question": "Qui a créé Vue",
+      "options": ["Robert Vue", "Mark Zuckerberg", "Evan You", "Nicolas Cage"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Par quel moyen passe-t-on une information d'un composant parent à un composant enfant ?",
+      "options": [
+        "Par un attribut chaîné",
+        "Par un callback",
+        "Par un attribut data-",
+        "Par une prop"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Quelles sont les 3 parties définissant un composant Vue ?",
+      "options": [
+        "script, template et methods",
+        "template, script et style",
+        "script, template et css",
+        "script, getters et template"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Quelle est la syntaxe pour passer une valeur dynamique \"kiwi\" ?",
+      "options": [
+        "v-bind:kiwi=\"kiwi\"",
+        "v-key:kiwi=\"kiwi\"",
+        "v-model=\"kiwi\"",
+        "kiwi=\"kiwi\""
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Quel module permet à Vue de partager des données entre tous les composants ?",
+      "options": ["ShareData", "Pinia", "DataLoader", "ReduxStore"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Quel est l'attribut nécessaire lorsqu'on crée une boucle avec v-for ?",
+      "options": ["v-id", "v-bind:key", "v-loop", "v-while"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Quelle instruction permet de router vers une autre vue",
+      "options": [
+        "this.$router.push(url)",
+        "this.$router.go(url)",
+        "this.$router.change(url)",
+        "this.$router.to(url)"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Comment peut-on surveiller un changement de valeur dans les données ?",
+      "options": [
+        "En utilisant MutationObserver",
+        "En utilisant setInterval dans methods",
+        "En utilisant watch ou watchEffect",
+        "En utilisant useEffect"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Quelle directive associe un champ input à une donnée ?",
+      "options": ["v-model", "v-bind", "v-store", "v-input"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Quelle instruction permet de restreindre la portée des styles au composant ?",
+      "options": [
+        "v-scoped",
+        "scoped",
+        "scoping:true",
+        "Ce n'est pas possible"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Quel élément permet de créer des emplacements de contenu pour remplir un composant avec un ou plusieurs autres composants ou du code html",
+      "options": ["<inject />", "<inside />", "<slot />", "<html />"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Comment peut-on générer un composant à la demande, dont le nom \"composant\" est stocké dans une variable ?",
+      "options": [
+        "<render template=\"composant\" />",
+        "<component render=\"composant\" />",
+        "<render component=\"composant\" />",
+        "<component :is=\"composant\" />"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Quel composant natif permet de déplacer une partie du template à un autre endroit du DOM ?",
+      "options": ["Teleport", "Transfer", "MoveTo", "Transport"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Quels sont les composants natifs qui permettent de travailler avec des transitions et des animations ?",
+      "options": [
+        "Animation et AnimationGroup",
+        "Transition et TransitionGroup",
+        "Effect et EffectGroup",
+        "Il n'y en a pas"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Quelle fonction utiliser pour déclarer un état réactif ?",
+      "options": ["useState", "signal", "ref", "Pas besoin de fonction"],
+      "correctOption": 2,
+      "points": 10
+    }
+  ]
+}
