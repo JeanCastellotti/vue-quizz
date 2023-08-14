@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { store } from '@/store'
+import { useStore } from '@/store'
+
+const store = useStore()
 
 const timer = ref<ReturnType<typeof setInterval>>()
 

@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import QuestionOptions from './QuestionOptions.vue'
-import { store } from '@/store'
+import { useStore } from '@/store'
 
-const question = computed(() => store.questions[store.currentQuestionIndex])
+const store = useStore()
 </script>
 
 <template>
   <h4 class="mb-10 text-center text-lg font-sembibold">
-    {{ question.question }}
+    {{ store.currentQuestion.question }}
   </h4>
-  <QuestionOptions :question="question" />
+  <QuestionOptions />
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, provide, ref } from 'vue'
+import { onMounted } from 'vue'
 
 import TheHeader from '@/components/TheHeader.vue'
 import AppLoader from '@/components/AppLoader.vue'
@@ -12,7 +12,9 @@ import TheQuestion from './components/TheQuestion.vue'
 import TheFinish from './components/TheFinish.vue'
 import TheProgress from './components/TheProgress.vue'
 
-import { store } from '@/store'
+import { useStore } from '@/store'
+
+const store = useStore()
 
 onMounted(async () => {
   try {

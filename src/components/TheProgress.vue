@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { store } from '@/store'
+import { useStore } from '@/store'
 
-const countQuestions = computed(() => store.questions.length)
-const totalPoints = computed(() =>
-  store.questions.reduce((acc, q) => acc + q.points, 0)
-)
+const store = useStore()
 
 const progressBarPercentage = computed(() => {
   return (
     ((store.currentQuestionIndex + Number(store.answer !== null)) /
-      countQuestions.value) *
+      store.countQuestions) *
     100
   )
 })
@@ -26,9 +23,9 @@ const progressBarPercentage = computed(() => {
     </div>
     <div class="flex justify-between">
       <span>
-        Question {{ store.currentQuestionIndex + 1 }}/{{ countQuestions }}
+        Question {{ store.currentQuestionIndex + 1 }}/{{ store.countQuestions }}
       </span>
-      <span>{{ store.score }}/ {{ totalPoints }} points</span>
+      <span>{{ store.score }}/ {{ store.totalPoints }} points</span>
     </div>
   </header>
 </template>
