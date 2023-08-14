@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Qui a créé Vue",
+      "question": "Qui a créé Vue ?",
       "options": ["Robert Vue", "Mark Zuckerberg", "Evan You", "Nicolas Cage"],
       "correctOption": 2,
       "points": 10
@@ -52,7 +52,7 @@
       "points": 10
     },
     {
-      "question": "Quelle instruction permet de router vers une autre vue",
+      "question": "Quelle instruction permet de router vers une autre vue ?",
       "options": [
         "this.$router.push(url)",
         "this.$router.go(url)",
@@ -81,17 +81,12 @@
     },
     {
       "question": "Quelle instruction permet de restreindre la portée des styles au composant ?",
-      "options": [
-        "v-scoped",
-        "scoped",
-        "scoping:true",
-        "Ce n'est pas possible"
-      ],
+      "options": ["v-scoped", "scoped", "scoping:true", "foo"],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "Quel élément permet de créer des emplacements de contenu pour remplir un composant avec un ou plusieurs autres composants ou du code html",
+      "question": "Quel élément permet de créer des emplacements de contenu pour remplir un composant avec un ou plusieurs autres composants ou du code html ?",
       "options": ["<inject />", "<inside />", "<slot />", "<html />"],
       "correctOption": 2,
       "points": 10
@@ -119,14 +114,14 @@
         "Animation et AnimationGroup",
         "Transition et TransitionGroup",
         "Effect et EffectGroup",
-        "Il n'y en a pas"
+        "foo et fooGroup"
       ],
       "correctOption": 1,
       "points": 10
     },
     {
       "question": "Quelle fonction utiliser pour déclarer un état réactif ?",
-      "options": ["useState", "signal", "ref", "Pas besoin de fonction"],
+      "options": ["useState", "signal", "ref", "foo"],
       "correctOption": 2,
       "points": 10
     }
