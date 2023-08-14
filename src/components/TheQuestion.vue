@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import QuestionOptions from './QuestionOptions.vue'
 import { useStore } from '@/store'
 
